@@ -41,7 +41,7 @@ jobs:
       - name: 📊 Check for changes
         id: verify_diff
         run: |
-          git add resultados_powerball.json historico_powerball.json
+          git add resultados_actuales.json historico_resultados.json
           if git diff --staged --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -59,6 +59,4 @@ jobs:
       - name: ℹ️ No changes detected
         if: steps.verify_diff.outputs.changed != 'true'
         run: echo "ℹ️ No se detectaron cambios en los resultados del Powerball"
-
-
         
