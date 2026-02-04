@@ -1,0 +1,64 @@
+name: Scraper Powerball USA
+
+on:
+  # Schedule desactivado - scraper activado manualmente vía cron-job.org
+  # schedule:
+  #   - cron: '0 4 * * 2,4,6'   # Martes, Jueves, Sábado a las 10:00 PM ET = 4:00 AM UTC (día siguiente)
+  #   - cron: '30 4 * * 2,4,6'  # Segunda verificación 30 minutos después
+  
+  # Mantiene la ejecución manual desde GitHub Actions
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: 📦 Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: 🎰 Run Powerball scraper
+        run: |
+          python powerball_scraper.py
+          echo "✅ Powerball scraper ejecutado - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+      
+      - name: 📊 Check for changes
+        id: verify_diff
+        run: |
+          git add resultados_powerball.json historico_powerball.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: 💾 Commit and push changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git commit -m "🎰 Actualizar resultados Powerball - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+      
+      - name: ℹ️ No changes detected
+        if: steps.verify_diff.outputs.changed != 'true'
+        run: echo "ℹ️ No se detectaron cambios en los resultados del Powerball"
+
+
+        

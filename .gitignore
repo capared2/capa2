@@ -1,0 +1,23 @@
+**2. `.gitignore`**
+```
+# Entorno virtual
+venv/
+env/
+
+# Archivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Resultados y logs
+powerball_results.json
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
