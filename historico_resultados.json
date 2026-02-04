@@ -1,0 +1,19 @@
+[
+  {
+    "sorteo": {
+      "fecha": "2026-02-02",
+      "blancos": [
+        3,
+        8,
+        31,
+        60,
+        65
+      ],
+      "powerball": 4,
+      "powerplay": 2,
+      "premio_estimado": 80000000,
+      "premio_efectivo": 36200000
+    },
+    "fecha_actualizacion": "Miércoles, 4 de Febrero de 2026 - 03:44 AM ET"
+  }
+]
