@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import time
 import logging
@@ -37,6 +37,39 @@ class PowerballScraper:
             'Thursday': 'Jueves', 'Friday': 'Viernes', 'Saturday': 'Sábado',
             'Sunday': 'Domingo'
         }
+    
+    def calcular_fecha_ultimo_sorteo(self):
+        """Calcula la fecha del último sorteo según el día actual"""
+        hoy = datetime.now()
+        dia_semana = hoy.weekday()  # 0=Lunes, 1=Martes, ..., 5=Sábado, 6=Domingo
+        hora = hoy.hour
+        
+        # Días de sorteo: Lunes(0), Miércoles(2), Sábado(5)
+        dias_sorteo = [0, 2, 5]
+        
+        # Si es día de sorteo y ya pasaron las 23:00 (11 PM)
+        if dia_semana in dias_sorteo and hora >= 23:
+            return hoy.strftime('%Y-%m-%d')
+        
+        # Buscar el último día de sorteo hacia atrás
+        for i in range(1, 8):
+            fecha = hoy - timedelta(days=i)
+            if fecha.weekday() in dias_sorteo:
+                return fecha.strftime('%Y-%m-%d')
+        
+        return hoy.strftime('%Y-%m-%d')
+    
+    def leer_json_actual(self):
+        """Lee el JSON actual si existe"""
+        try:
+            with open(RESULTS_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logging.info("No existe JSON anterior")
+            return None
+        except Exception as e:
+            logging.error(f"Error leyendo JSON actual: {e}")
+            return None
     
     def format_date_iso(self, date_str):
         """Convierte la fecha a formato ISO (YYYY-MM-DD)"""
@@ -380,11 +413,47 @@ def main():
     results = scraper.scrape_with_retry()
     
     if results.get('_success'):
-        scraper.save_results(results)
-        
         sorteo = results['sorteo']
         
-        # Contar cuántos sorteos hay en el histórico
+        # ===== LEER JSON ACTUAL (solo para fecha) =====
+        json_actual = scraper.leer_json_actual()
+        fecha_anterior = None
+        
+        if json_actual and 'sorteo' in json_actual:
+            fecha_anterior = json_actual['sorteo'].get('fecha')
+        
+        # ===== VALIDAR Y CORREGIR FECHA =====
+        fecha_scrapeda = sorteo.get('fecha')
+        
+        if fecha_scrapeda and fecha_anterior:
+            if fecha_scrapeda == fecha_anterior:
+                # La fecha no cambió, calcular inteligentemente
+                fecha_calculada = scraper.calcular_fecha_ultimo_sorteo()
+                logging.info(f"📅 Fecha scrapeada sin cambios: {fecha_scrapeda}")
+                logging.info(f"📅 Usando fecha calculada: {fecha_calculada}")
+                sorteo['fecha'] = fecha_calculada
+            else:
+                logging.info(f"✓ Fecha actualizada: {fecha_anterior} → {fecha_scrapeda}")
+        elif not fecha_scrapeda:
+            # No se pudo scrapear fecha, calcular
+            fecha_calculada = scraper.calcular_fecha_ultimo_sorteo()
+            logging.warning(f"⚠️ No se pudo scrapear fecha, usando calculada: {fecha_calculada}")
+            sorteo['fecha'] = fecha_calculada
+        else:
+            # Primera vez o no hay JSON anterior
+            logging.info(f"✓ Fecha scrapeada: {fecha_scrapeda}")
+        
+        # ===== VALIDAR PREMIOS =====
+        if sorteo['premio_estimado'] is None or sorteo['premio_efectivo'] is None:
+            logging.warning("⚠️ Premios no disponibles aún en el sitio oficial")
+            logging.info("📊 Se guardará como null - Frontend mostrará 'Se actualizará pronto'")
+        else:
+            logging.info("✓ Premios scrapeados correctamente")
+        
+        # ===== GUARDAR RESULTADOS =====
+        scraper.save_results(results)
+        
+        # Contar histórico
         try:
             with open(HISTORIC_FILE, 'r', encoding='utf-8') as f:
                 historico = json.load(f)
@@ -392,7 +461,7 @@ def main():
         except:
             total_historico = 0
         
-        # Mostrar resumen
+        # ===== MOSTRAR RESUMEN =====
         print("\n" + "="*60)
         print("RESULTADOS DEL POWERBALL")
         print("="*60)
@@ -400,13 +469,27 @@ def main():
         print(f"Números blancos: {' - '.join(map(str, sorteo['blancos']))}")
         print(f"Powerball: {sorteo['powerball']}")
         print(f"Power Play: {sorteo['powerplay']}x" if sorteo['powerplay'] else "Power Play: N/A")
-        print(f"Premio Estimado: ${sorteo['premio_estimado']:,}" if sorteo['premio_estimado'] else "Premio Estimado: N/A")
-        print(f"Premio Efectivo: ${sorteo['premio_efectivo']:,}" if sorteo['premio_efectivo'] else "Premio Efectivo: N/A")
+        
+        if sorteo['premio_estimado']:
+            print(f"Premio Estimado: ${sorteo['premio_estimado']:,}")
+        else:
+            print("Premio Estimado: ⏳ Se actualizará pronto")
+        
+        if sorteo['premio_efectivo']:
+            print(f"Premio Efectivo: ${sorteo['premio_efectivo']:,}")
+        else:
+            print("Premio Efectivo: ⏳ Se actualizará pronto")
+        
         print(f"\nActualizado: {results['fecha_actualizacion']}")
         print("-"*60)
         print(f"📁 Archivo actual: {RESULTS_FILE}")
         print(f"📚 Histórico: {HISTORIC_FILE} ({total_historico} sorteos)")
         print("="*60)
+        
+        if sorteo['premio_estimado'] is None or sorteo['premio_efectivo'] is None:
+            print("\n⚠️  NOTA: Los premios del próximo sorteo se actualizarán pronto")
+            print("    El sitio oficial aún no ha publicado esta información.")
+            print("="*60)
     else:
         logging.error("No se pudieron obtener los resultados")
         print("\n" + "="*60)
@@ -418,3 +501,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    

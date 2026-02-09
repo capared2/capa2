@@ -13,5 +13,5 @@ HISTORIC_FILE = 'historico_resultados.json'
 LOG_FILE = 'powerball_scraper.log'
 
 # Configuración de reintentos
-MAX_RETRY_ATTEMPTS = 3
-RETRY_DELAY_SECONDS = 5
+MAX_RETRY_ATTEMPTS = 5
+RETRY_DELAY_SECONDS = 10
