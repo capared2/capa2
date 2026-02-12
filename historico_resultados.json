@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-02-11",
+      "blancos": [
+        6,
+        20,
+        33,
+        40,
+        48
+      ],
+      "powerball": 5,
+      "powerplay": 2,
+      "premio_estimado": 126000000,
+      "premio_efectivo": 57800000
+    },
+    "fecha_actualizacion": "Jueves, 12 de Febrero de 2026 - 04:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-02-09",
       "blancos": [
         6,
