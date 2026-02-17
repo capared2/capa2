@@ -1,6 +1,6 @@
 {
   "sorteo": {
-    "fecha": "2026-02-16",
+    "fecha": "2026-02-14",
     "blancos": [
       16,
       18,
@@ -13,5 +13,5 @@
     "premio_estimado": 154000000,
     "premio_efectivo": 72200000
   },
-  "fecha_actualizacion": "Martes, 17 de Febrero de 2026 - 04:09 AM ET"
+  "fecha_actualizacion": "Martes, 17 de Febrero de 2026 - 04:45 AM ET"
 }
