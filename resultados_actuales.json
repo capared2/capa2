@@ -1,17 +1,17 @@
 {
   "sorteo": {
-    "fecha": "2026-02-07",
+    "fecha": "2026-02-23",
     "blancos": [
-      25,
-      36,
-      42,
-      51,
-      58
+      5,
+      11,
+      23,
+      29,
+      47
     ],
     "powerball": 6,
     "powerplay": 2,
-    "premio_estimado": 113000000,
-    "premio_efectivo": 51800000
+    "premio_estimado": 203000000,
+    "premio_efectivo": 94600000
   },
-  "fecha_actualizacion": "Domingo, 8 de Febrero de 2026 - 11:08 PM ET"
+  "fecha_actualizacion": "Lunes, 23 de Febrero de 2026 - 11:07 PM ET"
 }

@@ -1,53 +1,19 @@
 [
   {
     "sorteo": {
-      "fecha": "2026-02-07",
+      "fecha": "2026-02-23",
       "blancos": [
-        25,
-        36,
-        42,
-        51,
-        58
+        5,
+        11,
+        23,
+        29,
+        47
       ],
       "powerball": 6,
       "powerplay": 2,
-      "premio_estimado": 113000000,
-      "premio_efectivo": 51800000
+      "premio_estimado": 203000000,
+      "premio_efectivo": 94600000
     },
-    "fecha_actualizacion": "Domingo, 8 de Febrero de 2026 - 11:08 PM ET"
-  },
-  {
-    "sorteo": {
-      "fecha": "2026-02-04",
-      "blancos": [
-        27,
-        29,
-        30,
-        37,
-        58
-      ],
-      "powerball": 15,
-      "powerplay": 2,
-      "premio_estimado": 102000000,
-      "premio_efectivo": 46100000
-    },
-    "fecha_actualizacion": "Viernes, 6 de Febrero de 2026 - 03:40 AM ET"
-  },
-  {
-    "sorteo": {
-      "fecha": "2026-02-02",
-      "blancos": [
-        3,
-        8,
-        31,
-        60,
-        65
-      ],
-      "powerball": 4,
-      "powerplay": 2,
-      "premio_estimado": 80000000,
-      "premio_efectivo": 36200000
-    },
-    "fecha_actualizacion": "Miércoles, 4 de Febrero de 2026 - 03:44 AM ET"
+    "fecha_actualizacion": "Lunes, 23 de Febrero de 2026 - 11:07 PM ET"
   }
 ]
