@@ -10,8 +10,13 @@
     ],
     "powerball": 6,
     "powerplay": 2,
-    "premio_estimado": 203000000,
-    "premio_efectivo": 94600000
+    "jackpot_ganado": false,
+    "ganador_estado": null
   },
-  "fecha_actualizacion": "Lunes, 23 de Febrero de 2026 - 11:07 PM ET"
+  "proximo_sorteo": {
+    "fecha": "2026-02-25",
+    "premio_estimado": 218000000,
+    "premio_efectivo": 101600000
+  },
+  "fecha_actualizacion": "Lunes, 23 de Febrero de 2026 - 11:24 PM ET"
 }
