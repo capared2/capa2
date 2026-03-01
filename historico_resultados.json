@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-02-28",
+      "blancos": [
+        6,
+        20,
+        35,
+        54,
+        65
+      ],
+      "powerball": 10,
+      "powerplay": 4,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Domingo, 1 de Marzo de 2026 - 04:45 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-02-25",
       "blancos": [
         50,
