@@ -1,15 +1,15 @@
 {
   "sorteo": {
-    "fecha": "2026-03-09",
+    "fecha": "2026-03-11",
     "blancos": [
-      22,
-      23,
-      28,
-      36,
-      54
+      3,
+      6,
+      55,
+      58,
+      63
     ],
-    "powerball": 13,
-    "powerplay": 3,
+    "powerball": 12,
+    "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
@@ -18,5 +18,5 @@
     "premio_estimado": 58000000,
     "premio_efectivo": 26800000
   },
-  "fecha_actualizacion": "Miércoles, 11 de Marzo de 2026 - 01:00 PM ET"
+  "fecha_actualizacion": "Jueves, 12 de Marzo de 2026 - 04:09 AM ET"
 }
