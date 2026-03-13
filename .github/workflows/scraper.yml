@@ -1,12 +1,6 @@
 name: Scraper Powerball USA
 
 on:
-  # Schedule desactivado - scraper activado manualmente vía cron-job.org
-  # schedule:
-  #   - cron: '0 4 * * 2,4,6'   # Martes, Jueves, Sábado a las 10:00 PM ET = 4:00 AM UTC (día siguiente)
-  #   - cron: '30 4 * * 2,4,6'  # Segunda verificación 30 minutos después
-  
-  # Mantiene la ejecución manual desde GitHub Actions
   workflow_dispatch:
 
 permissions:
@@ -18,12 +12,12 @@ jobs:
     
     steps:
       - name: 📥 Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: 🐍 Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
@@ -59,4 +53,5 @@ jobs:
       - name: ℹ️ No changes detected
         if: steps.verify_diff.outputs.changed != 'true'
         run: echo "ℹ️ No se detectaron cambios en los resultados del Powerball"
+
         
