@@ -1,22 +1,22 @@
 {
   "sorteo": {
-    "fecha": "2026-03-14",
+    "fecha": "2026-03-16",
     "blancos": [
-      9,
-      30,
-      42,
-      50,
+      7,
+      10,
+      20,
+      47,
       52
     ],
-    "powerball": 21,
-    "powerplay": 3,
+    "powerball": 20,
+    "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-03-16",
-    "premio_estimado": 88000000,
-    "premio_efectivo": 40000000
+    "fecha": "2026-03-18",
+    "premio_estimado": 101000000,
+    "premio_efectivo": 46000000
   },
-  "fecha_actualizacion": "Lunes, 16 de Marzo de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Martes, 17 de Marzo de 2026 - 04:09 AM ET"
 }
