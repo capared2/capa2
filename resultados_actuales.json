@@ -1,22 +1,22 @@
 {
   "sorteo": {
-    "fecha": "2026-04-01",
+    "fecha": "2026-04-04",
     "blancos": [
-      4,
-      10,
-      11,
-      52,
-      64
+      3,
+      6,
+      13,
+      41,
+      65
     ],
-    "powerball": 24,
-    "powerplay": 3,
+    "powerball": 1,
+    "powerplay": 4,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-04-04",
-    "premio_estimado": 217000000,
-    "premio_efectivo": 98600000
+    "fecha": "2026-04-06",
+    "premio_estimado": 231000000,
+    "premio_efectivo": 105000000
   },
-  "fecha_actualizacion": "Sábado, 4 de Abril de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Domingo, 5 de Abril de 2026 - 04:09 AM ET"
 }
