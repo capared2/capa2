@@ -1,14 +1,14 @@
 {
   "sorteo": {
-    "fecha": "2026-04-25",
+    "fecha": "2026-04-27",
     "blancos": [
-      4,
-      30,
+      18,
+      31,
+      33,
       36,
-      52,
-      57
+      62
     ],
-    "powerball": 2,
+    "powerball": 3,
     "powerplay": 3,
     "jackpot_ganado": false,
     "ganador_estado": null
@@ -18,5 +18,5 @@
     "premio_estimado": 130000000,
     "premio_efectivo": 59100000
   },
-  "fecha_actualizacion": "Lunes, 27 de Abril de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Martes, 28 de Abril de 2026 - 04:09 AM ET"
 }
