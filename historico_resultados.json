@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-04-29",
+      "blancos": [
+        3,
+        19,
+        35,
+        51,
+        67
+      ],
+      "powerball": 15,
+      "powerplay": 2,
+      "jackpot_ganado": true,
+      "ganador_estado": "IN"
+    },
+    "fecha_actualizacion": "Jueves, 30 de Abril de 2026 - 04:45 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-04-27",
       "blancos": [
         18,
