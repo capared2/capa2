@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-05-13",
+      "blancos": [
+        22,
+        31,
+        52,
+        56,
+        67
+      ],
+      "powerball": 15,
+      "powerplay": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Jueves, 14 de Mayo de 2026 - 04:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-05-11",
       "blancos": [
         24,
