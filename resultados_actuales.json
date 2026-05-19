@@ -1,22 +1,22 @@
 {
   "sorteo": {
-    "fecha": "2026-05-16",
+    "fecha": "2026-05-18",
     "blancos": [
-      8,
-      37,
-      40,
-      44,
+      4,
+      13,
+      34,
+      61,
       65
     ],
-    "powerball": 18,
-    "powerplay": 3,
+    "powerball": 12,
+    "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-05-18",
-    "premio_estimado": 100000000,
-    "premio_efectivo": 43900000
+    "fecha": "2026-05-20",
+    "premio_estimado": 113000000,
+    "premio_efectivo": 49600000
   },
-  "fecha_actualizacion": "Lunes, 18 de Mayo de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Martes, 19 de Mayo de 2026 - 04:09 AM ET"
 }
