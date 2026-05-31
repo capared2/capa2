@@ -1,22 +1,22 @@
 {
   "sorteo": {
-    "fecha": "2026-05-27",
+    "fecha": "2026-05-30",
     "blancos": [
-      5,
-      14,
-      21,
-      31,
-      51
+      1,
+      27,
+      35,
+      44,
+      52
     ],
-    "powerball": 13,
-    "powerplay": 4,
+    "powerball": 12,
+    "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-05-30",
-    "premio_estimado": 172000000,
-    "premio_efectivo": 76900000
+    "fecha": "2026-06-01",
+    "premio_estimado": 180000000,
+    "premio_efectivo": 80400000
   },
-  "fecha_actualizacion": "Sábado, 30 de Mayo de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Domingo, 31 de Mayo de 2026 - 04:09 AM ET"
 }
