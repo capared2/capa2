@@ -1,22 +1,22 @@
 {
   "sorteo": {
-    "fecha": "2026-06-20",
+    "fecha": "2026-06-22",
     "blancos": [
-      16,
-      20,
-      44,
-      48,
-      50
+      17,
+      19,
+      21,
+      45,
+      48
     ],
-    "powerball": 15,
+    "powerball": 13,
     "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-06-22",
-    "premio_estimado": 312000000,
-    "premio_efectivo": 141200000
+    "fecha": "2026-06-24",
+    "premio_estimado": 327000000,
+    "premio_efectivo": 148000000
   },
-  "fecha_actualizacion": "Lunes, 22 de Junio de 2026 - 06:00 PM ET"
+  "fecha_actualizacion": "Martes, 23 de Junio de 2026 - 04:09 AM ET"
 }
