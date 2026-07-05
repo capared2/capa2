@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-04",
+      "blancos": [
+        17,
+        38,
+        46,
+        50,
+        69
+      ],
+      "powerball": 20,
+      "powerplay": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Domingo, 5 de Julio de 2026 - 04:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-01",
       "blancos": [
         2,
