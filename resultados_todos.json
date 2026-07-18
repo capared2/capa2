@@ -13,14 +13,17 @@
           38
         ],
         "powerball": 16,
-        "powerplay": 2
+        "powerplay": 2,
+        "jackpot_ganado": false,
+        "ganador_estado": null,
+        "doble_jugada": null
       },
       "proximo_sorteo": {
         "fecha": "2026-07-18",
-        "premio_estimado": null,
-        "premio_efectivo": null
+        "premio_estimado": 526000000,
+        "premio_efectivo": 233600000
       },
-      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:36 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +45,7 @@
         "premio_estimado": 707000000,
         "premio_efectivo": 307700000
       },
-      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:36 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -64,8 +67,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+      "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:37 AM ET"
     }
   },
-  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:36 AM ET"
 }
