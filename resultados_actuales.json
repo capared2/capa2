@@ -1,4 +1,6 @@
 {
+  "juego": "powerball",
+  "nombre": "Powerball",
   "sorteo": {
     "fecha": "2026-07-15",
     "blancos": [
@@ -9,14 +11,12 @@
       38
     ],
     "powerball": 16,
-    "powerplay": 2,
-    "jackpot_ganado": false,
-    "ganador_estado": null
+    "powerplay": 2
   },
   "proximo_sorteo": {
     "fecha": "2026-07-18",
-    "premio_estimado": 526000000,
-    "premio_efectivo": 233600000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 01:00 PM ET"
+  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
 }

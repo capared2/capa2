@@ -1,0 +1,16 @@
+[
+  {
+    "sorteo": {
+      "fecha": "2026-02-21",
+      "blancos": [
+        20,
+        25,
+        30,
+        52,
+        55
+      ],
+      "cash_ball": 4
+    },
+    "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+  }
+]

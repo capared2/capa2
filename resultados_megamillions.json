@@ -1,0 +1,22 @@
+{
+  "juego": "megamillions",
+  "nombre": "Mega Millions",
+  "sorteo": {
+    "fecha": "2026-07-17",
+    "blancos": [
+      22,
+      34,
+      45,
+      48,
+      55
+    ],
+    "megaball": 14,
+    "megaplier": -1
+  },
+  "proximo_sorteo": {
+    "fecha": "2026-07-21",
+    "premio_estimado": 707000000,
+    "premio_efectivo": 307700000
+  },
+  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+}

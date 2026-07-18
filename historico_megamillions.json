@@ -1,0 +1,17 @@
+[
+  {
+    "sorteo": {
+      "fecha": "2026-07-17",
+      "blancos": [
+        22,
+        34,
+        45,
+        48,
+        55
+      ],
+      "megaball": 14,
+      "megaplier": -1
+    },
+    "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+  }
+]

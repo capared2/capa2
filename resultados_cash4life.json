@@ -1,0 +1,22 @@
+{
+  "juego": "cash4life",
+  "nombre": "Cash4Life",
+  "sorteo": {
+    "fecha": "2026-02-21",
+    "blancos": [
+      20,
+      25,
+      30,
+      52,
+      55
+    ],
+    "cash_ball": 4
+  },
+  "proximo_sorteo": {
+    "fecha": "2026-02-22",
+    "premio_estimado": null,
+    "premio_efectivo": null,
+    "premio_descripcion": "$1,000 al día de por vida"
+  },
+  "fecha_actualizacion": "Sábado, 18 de Julio de 2026 - 11:07 AM ET"
+}
