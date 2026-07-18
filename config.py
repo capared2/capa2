@@ -1,17 +1,71 @@
-# Configuración del Powerball Scraper
-
-# URL del sitio web de Powerball (página principal donde aparecen los resultados)
-POWERBALL_URL = 'https://www.powerball.com/'
-
-# Archivo para resultados actuales (se sobrescribe cada vez)
-RESULTS_FILE = 'resultados_actuales.json'
-
-# Archivo para histórico de resultados (se va agregando)
-HISTORIC_FILE = 'historico_resultados.json'
+# Configuración del Lottery Scraper (multi-juego)
 
 # Archivo de log
-LOG_FILE = 'powerball_scraper.log'
+LOG_FILE = 'lottery_scraper.log'
 
-# Configuración de reintentos
-MAX_RETRY_ATTEMPTS = 5
+# Configuración de reintentos (por juego)
+MAX_RETRY_ATTEMPTS = 3
 RETRY_DELAY_SECONDS = 10
+
+# Timeout de peticiones HTTP (segundos)
+REQUEST_TIMEOUT = 15
+
+# Archivo combinado con el último resultado de todos los juegos
+COMBINED_FILE = 'resultados_todos.json'
+
+# Juegos a extraer.
+# 'dias_sorteo': 0=Lunes, 1=Martes, ... 6=Domingo
+# 'socrata_url': API de datos abiertos del estado de NY (data.ny.gov),
+#                se usa como fuente de respaldo cuando el sitio oficial falla.
+GAMES = {
+    'powerball': {
+        'nombre': 'Powerball',
+        'url': 'https://www.powerball.com/',
+        'socrata_url': 'https://data.ny.gov/resource/d6yy-54nr.json',
+        'results_file': 'resultados_actuales.json',
+        'historic_file': 'historico_resultados.json',
+        'dias_sorteo': [0, 2, 5],           # Lunes, Miércoles, Sábado
+        'bola_especial': 'powerball',
+        'multiplicador': 'powerplay',
+        'clases_bola_especial': ['powerball'],
+        # En data.ny.gov los 6 números vienen juntos: los 5 blancos + powerball
+        'socrata_formato': {'bolas': 6, 'campo_especial': None, 'campo_multiplicador': 'multiplier'},
+    },
+    'megamillions': {
+        'nombre': 'Mega Millions',
+        'api_url': 'https://www.megamillions.com/cmspages/utilservice.asmx/GetLatestDrawData',
+        'socrata_url': 'https://data.ny.gov/resource/5xaw-6ayf.json',
+        'results_file': 'resultados_megamillions.json',
+        'historic_file': 'historico_megamillions.json',
+        'dias_sorteo': [1, 4],              # Martes, Viernes
+        'bola_especial': 'megaball',
+        'multiplicador': 'megaplier',
+        'socrata_formato': {'bolas': 5, 'campo_especial': 'mega_ball', 'campo_multiplicador': 'multiplier'},
+    },
+    'lottoamerica': {
+        'nombre': 'Lotto America',
+        'url': 'https://www.lottoamerica.com/',
+        'results_file': 'resultados_lottoamerica.json',
+        'historic_file': 'historico_lottoamerica.json',
+        'dias_sorteo': [0, 2, 5],           # Lunes, Miércoles, Sábado
+        'bola_especial': 'star_ball',
+        'multiplicador': 'all_star_bonus',
+        'clases_bola_especial': ['star', 'bonus'],
+    },
+    'cash4life': {
+        'nombre': 'Cash4Life',
+        'socrata_url': 'https://data.ny.gov/resource/kwxv-fwze.json',
+        'results_file': 'resultados_cash4life.json',
+        'historic_file': 'historico_cash4life.json',
+        'dias_sorteo': [0, 1, 2, 3, 4, 5, 6],  # Diario
+        'bola_especial': 'cash_ball',
+        'multiplicador': None,
+        'premio_descripcion': '$1,000 al día de por vida',
+        'socrata_formato': {'bolas': 5, 'campo_especial': 'cash_ball', 'campo_multiplicador': None},
+    },
+}
+
+# --- Compatibilidad con la versión anterior (solo Powerball) ---
+POWERBALL_URL = GAMES['powerball']['url']
+RESULTS_FILE = GAMES['powerball']['results_file']
+HISTORIC_FILE = GAMES['powerball']['historic_file']

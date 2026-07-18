@@ -1,7 +1,10 @@
-name: Scraper Powerball USA
+name: Scraper Loterias USA
 
 on:
   workflow_dispatch:
+  schedule:
+    # 05:00 UTC ≈ 00:00-01:00 ET, después de todos los sorteos del día
+    - cron: '0 5 * * *'
 
 permissions:
   contents: write
@@ -9,49 +12,49 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
-      
+
       - name: 📦 Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-      
-      - name: 🎰 Run Powerball scraper
+
+      - name: 🧪 Run offline tests
+        run: python test_scraper.py
+
+      - name: 🎰 Run lottery scraper
         run: |
-          python powerball_scraper.py
-          echo "✅ Powerball scraper ejecutado - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-      
+          python lottery_scraper.py
+          echo "✅ Scraper ejecutado - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+
       - name: 📊 Check for changes
         id: verify_diff
         run: |
-          git add resultados_actuales.json historico_resultados.json
+          git add *.json
           if git diff --staged --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-      
+
       - name: 💾 Commit and push changes
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Actions Bot"
-          git commit -m "🎰 Actualizar resultados Powerball - $(date +'%Y-%m-%d %H:%M:%S')"
+          git commit -m "🎰 Actualizar resultados loterías - $(date +'%Y-%m-%d %H:%M:%S')"
           git push
-      
       - name: ℹ️ No changes detected
         if: steps.verify_diff.outputs.changed != 'true'
-        run: echo "ℹ️ No se detectaron cambios en los resultados del Powerball"
-
-        
+        run: echo "ℹ️ No se detectaron cambios en los resultados"

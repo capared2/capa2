@@ -1,5 +1,3 @@
-**2. `.gitignore`**
-```
 # Entorno virtual
 venv/
 env/
