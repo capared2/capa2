@@ -13,14 +13,17 @@
           56
         ],
         "powerball": 3,
-        "powerplay": 4
+        "powerplay": 4,
+        "jackpot_ganado": false,
+        "ganador_estado": null,
+        "doble_jugada": null
       },
       "proximo_sorteo": {
         "fecha": "2026-07-20",
-        "premio_estimado": null,
-        "premio_efectivo": null
+        "premio_estimado": 544000000,
+        "premio_efectivo": 241600000
       },
-      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:19 PM ET"
+      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +45,31 @@
         "premio_estimado": 707000000,
         "premio_efectivo": 307700000
       },
-      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:19 PM ET"
+      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
+    },
+    "lottoamerica": {
+      "juego": "lottoamerica",
+      "nombre": "Lotto America",
+      "sorteo": {
+        "fecha": "2026-07-18",
+        "blancos": [
+          13,
+          17,
+          22,
+          28,
+          40
+        ],
+        "star_ball": 3,
+        "all_star_bonus": 2,
+        "jackpot_ganado": false,
+        "ganador_estado": null
+      },
+      "proximo_sorteo": {
+        "fecha": "2026-07-20",
+        "premio_estimado": 2000000,
+        "premio_efectivo": null
+      },
+      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -66,7 +93,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:20 PM ET"
+      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -88,8 +115,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:20 PM ET"
+      "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
     }
   },
-  "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:19 PM ET"
+  "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 12:22 PM ET"
 }
