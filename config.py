@@ -21,6 +21,8 @@ GAMES = {
     'powerball': {
         'nombre': 'Powerball',
         'url': 'https://www.powerball.com/',
+        # Página dedicada del Double Play (más confiable que buscarlo en la portada)
+        'double_play_url': 'https://www.powerball.com/double-play',
         'socrata_url': 'https://data.ny.gov/resource/d6yy-54nr.json',
         'results_file': 'resultados_actuales.json',
         'historic_file': 'historico_resultados.json',
@@ -44,13 +46,29 @@ GAMES = {
     },
     'lottoamerica': {
         'nombre': 'Lotto America',
-        'url': 'https://www.lottoamerica.com/',
+        # La página hermana en powerball.com comparte la estructura HTML
+        # estándar de MUSL; lottoamerica.com usa un HTML distinto que el
+        # parser no entiende (verificado con probe_juegos.py).
+        'url': 'https://www.powerball.com/lotto-america',
         'results_file': 'resultados_lottoamerica.json',
         'historic_file': 'historico_lottoamerica.json',
         'dias_sorteo': [0, 2, 5],           # Lunes, Miércoles, Sábado
         'bola_especial': 'star_ball',
         'multiplicador': 'all_star_bonus',
         'clases_bola_especial': ['star', 'bonus'],
+    },
+    '2by2': {
+        'nombre': '2by2',
+        'url': 'https://www.powerball.com/2by2',
+        'results_file': 'resultados_2by2.json',
+        'historic_file': 'historico_2by2.json',
+        'dias_sorteo': [0, 1, 2, 3, 4, 5, 6],  # Diario
+        # Formato distinto: 2 bolas rojas + 2 blancas, sin bola especial
+        'num_blancos': 2,
+        'num_rojas': 2,
+        'bola_especial': None,
+        'multiplicador': None,
+        'premio_descripcion': 'Premio mayor: $22,000',
     },
     'cash4life': {
         'nombre': 'Cash4Life',

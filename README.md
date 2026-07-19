@@ -4,10 +4,16 @@ Scraper automatizado para obtener los resultados de las principales loterías de
 
 | Juego | Fuente principal | Fuente de respaldo | Sorteos |
 |---|---|---|---|
-| **Powerball** (+ Double Play) | powerball.com | data.ny.gov | Lun, Mié, Sáb |
+| **Powerball** (+ Double Play) | powerball.com (+ /double-play) | data.ny.gov | Lun, Mié, Sáb |
 | **Mega Millions** | API de megamillions.com | data.ny.gov | Mar, Vie |
-| **Lotto America** | lottoamerica.com | — | Lun, Mié, Sáb |
+| **Lotto America** | powerball.com/lotto-america | — | Lun, Mié, Sáb |
+| **2by2** | powerball.com/2by2 | — | Diario |
 | **Cash4Life** | data.ny.gov | — | Diario |
+
+Del menú de juegos de powerball.com quedan fuera **Jackpot USA** y
+**Millionaire for Life**: sus páginas no publican números de sorteo
+(verificado con `probe_juegos.py` — una solo lista ganadores y la otra es un
+placeholder), así que no hay nada que extraer.
 
 Cada juego se extrae de forma independiente: si una fuente falla, se usa el
 respaldo, y si un juego falla por completo, los demás se guardan igual.
@@ -39,6 +45,7 @@ python test_scraper.py
 | `historico_resultados.json` | Histórico de Powerball |
 | `resultados_megamillions.json` / `historico_megamillions.json` | Mega Millions |
 | `resultados_lottoamerica.json` / `historico_lottoamerica.json` | Lotto America |
+| `resultados_2by2.json` / `historico_2by2.json` | 2by2 (2 rojas + 2 blancas, sin bola especial) |
 | `resultados_cash4life.json` / `historico_cash4life.json` | Cash4Life |
 | `resultados_todos.json` | Último resultado de todos los juegos en un solo archivo |
 

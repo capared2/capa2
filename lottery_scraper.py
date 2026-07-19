@@ -189,16 +189,36 @@ class BaseScraper:
     # Construcción del resultado
     # ──────────────────────────────────────────────
     def build_results(self, fecha, blancas, especial, multiplicador=None,
-                      extra_sorteo=None, proximo=None):
-        """Arma el diccionario de resultados con la estructura estándar."""
+                      extra_sorteo=None, proximo=None, rojas=None):
+        """Arma el diccionario de resultados con la estructura estándar.
+
+        El formato clásico es 5 blancas + 1 bola especial; juegos como 2by2
+        usan 'num_blancos'/'num_rojas' y no tienen bola especial."""
         blancas = blancas or []
-        exito = len(blancas) == 5 and especial is not None and fecha is not None
+        rojas = rojas or []
+        num_blancos = self.cfg.get('num_blancos', 5)
+        num_rojas = self.cfg.get('num_rojas', 0)
+
+        exito = (
+            fecha is not None
+            and len(blancas) == num_blancos
+            and len(rojas) == num_rojas
+            and (self.cfg.get('bola_especial') is None or especial is not None)
+        )
+
+        # Un multiplicador que no sea un entero >= 1 no es un dato real
+        # (la API de Mega Millions devuelve -1 cuando no aplica).
+        if not isinstance(multiplicador, int) or multiplicador < 1:
+            multiplicador = None
 
         sorteo = {
             'fecha': fecha,
             'blancos': sorted(blancas),
-            self.cfg['bola_especial']: especial,
         }
+        if num_rojas:
+            sorteo['rojos'] = sorted(rojas)
+        if self.cfg.get('bola_especial'):
+            sorteo[self.cfg['bola_especial']] = especial
         if self.cfg.get('multiplicador'):
             sorteo[self.cfg['multiplicador']] = multiplicador
         if extra_sorteo:
@@ -366,21 +386,24 @@ class MuslSiteScraper(BaseScraper):
             raise
 
     def _extraer_bolas(self, contenedor):
-        """Devuelve (blancas, especial) dentro de un contenedor HTML.
+        """Devuelve (blancas, rojas, especial) dentro de un contenedor HTML.
 
-        Las bolas blancas llevan la clase 'white-balls'. La bola especial es el
-        primer elemento 'form-control' con solo dígitos que no sea blanca,
-        priorizando las clases configuradas (evita confundirla con el
-        multiplicador, cuyo texto es tipo '2X')."""
-        blancas = []
-        candidatos = []
+        Las bolas principales llevan la clase 'white-balls' (o 'black-balls'
+        en la página del Double Play); las rojas del 2by2 llevan 'red-balls'.
+        La bola especial es el primer elemento 'form-control' con solo dígitos
+        que no sea de los grupos anteriores, priorizando las clases
+        configuradas (evita confundirla con el multiplicador, tipo '2X')."""
+        blancas, rojas, candidatos = [], [], []
         for c in contenedor.find_all('div', class_='form-control'):
             clases = c.get('class', [])
             texto = c.get_text(strip=True)
-            if 'white-balls' in clases:
-                num = re.sub(r'[^\d]', '', texto)
+            num = re.sub(r'[^\d]', '', texto)
+            if 'white-balls' in clases or 'black-balls' in clases:
                 if num.isdigit():
                     blancas.append(int(num))
+            elif 'red-balls' in clases:
+                if num.isdigit():
+                    rojas.append(int(num))
             elif re.fullmatch(r'\d{1,3}', texto):
                 candidatos.append((clases, int(texto)))
 
@@ -392,7 +415,7 @@ class MuslSiteScraper(BaseScraper):
                 break
         if especial is None and candidatos:
             especial = candidatos[0][1]
-        return blancas, especial
+        return blancas, rojas, especial
 
     def parse_html(self, html):
         soup = BeautifulSoup(html, 'html.parser')
@@ -413,15 +436,17 @@ class MuslSiteScraper(BaseScraper):
 
         # Bolas: primero dentro de la sección del sorteo; si no cuadra,
         # búsqueda en toda la página (comportamiento original)
-        blancas, especial = [], None
+        num_blancos = self.cfg.get('num_blancos', 5)
+        blancas, rojas, especial = [], [], None
         if numbers_section:
-            blancas, especial = self._extraer_bolas(numbers_section)
-        if len(blancas) != 5 or especial is None:
-            blancas_pg, especial_pg = self._extraer_bolas(soup)
-            if len(blancas_pg) == 5:
+            blancas, rojas, especial = self._extraer_bolas(numbers_section)
+        if len(blancas) != num_blancos or (self.cfg.get('bola_especial') and especial is None):
+            blancas_pg, rojas_pg, especial_pg = self._extraer_bolas(soup)
+            if len(blancas_pg) == num_blancos:
                 blancas = blancas_pg
+                rojas = rojas or rojas_pg
                 especial = especial if especial is not None else especial_pg
-        logging.info(f"[{self.nombre}] Blancas: {blancas} | Especial: {especial}")
+        logging.info(f"[{self.nombre}] Blancas: {blancas} | Rojas: {rojas} | Especial: {especial}")
 
         # Multiplicador (Power Play / All Star Bonus)
         multiplicador = None
@@ -494,14 +519,14 @@ class MuslSiteScraper(BaseScraper):
 
         extra = self.extra_sorteo(soup, jackpot_ganado, ganador_estado)
         results = self.build_results(draw_date, blancas, especial, multiplicador,
-                                     extra_sorteo=extra, proximo=proximo)
+                                     extra_sorteo=extra, proximo=proximo, rojas=rojas)
 
         if results['_success']:
             logging.info(f"[{self.nombre}] [OK] {sorted(blancas)} + {especial} | Próximo: {proximo['fecha']}")
         else:
             logging.warning(
-                f"[{self.nombre}] [ADVERTENCIA] Incompleto — blancas:{len(blancas)}/5, "
-                f"especial:{especial}, fecha:{draw_date}"
+                f"[{self.nombre}] [ADVERTENCIA] Incompleto — blancas:{len(blancas)}/{num_blancos}, "
+                f"rojas:{len(rojas)}, especial:{especial}, fecha:{draw_date}"
             )
         return results
 
@@ -515,11 +540,12 @@ class PowerballScraper(MuslSiteScraper):
 
     def extra_sorteo(self, soup, jackpot_ganado, ganador_estado):
         extra = super().extra_sorteo(soup, jackpot_ganado, ganador_estado)
-        extra['doble_jugada'] = self._extraer_doble_jugada(soup)
+        extra['doble_jugada'] = (self._extraer_doble_jugada(soup)
+                                 or self._doble_jugada_pagina_dedicada())
         return extra
 
     def _extraer_doble_jugada(self, soup):
-        """Extrae los números del sorteo Double Play si aparecen en la página."""
+        """Extrae los números del Double Play si aparecen en la misma página."""
         try:
             seccion = None
             for candidata in soup.find_all(id=re.compile(r'(double|dbl)', re.IGNORECASE)):
@@ -534,12 +560,33 @@ class PowerballScraper(MuslSiteScraper):
             if not seccion:
                 return None
 
-            blancas, especial = self._extraer_bolas(seccion)
+            blancas, _rojas, especial = self._extraer_bolas(seccion)
             if len(blancas) == 5 and especial is not None:
                 logging.info(f"[{self.nombre}] Double Play: {sorted(blancas)} + {especial}")
                 return {'blancos': sorted(blancas), 'powerball': especial}
         except Exception as e:
             logging.warning(f"[{self.nombre}] Error Double Play: {e}")
+        return None
+
+    def _doble_jugada_pagina_dedicada(self):
+        """Extrae el Double Play desde powerball.com/double-play.
+
+        En esa página las 5 bolas llevan la clase 'black-balls' (que
+        _extraer_bolas trata como blancas) y la especial 'dp-powerball'."""
+        url = self.cfg.get('double_play_url')
+        if not url:
+            return None
+        try:
+            response = requests.get(url, headers=self.headers, timeout=REQUEST_TIMEOUT)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            seccion = soup.find('div', class_='col', id='numbers') or soup
+            blancas, _rojas, especial = self._extraer_bolas(seccion)
+            if len(blancas) == 5 and especial is not None:
+                logging.info(f"[{self.nombre}] Double Play (página dedicada): {sorted(blancas)} + {especial}")
+                return {'blancos': sorted(blancas), 'powerball': especial}
+        except Exception as e:
+            logging.warning(f"[{self.nombre}] Error Double Play (página dedicada): {e}")
         return None
 
 
@@ -669,7 +716,10 @@ def imprimir_resumen(resumen):
 
         print(f"  Fecha       : {sorteo['fecha']}")
         print(f"  Blancos     : {' - '.join(map(str, sorteo['blancos']))}")
-        print(f"  {cfg['bola_especial'].replace('_', ' ').title():<12}: {sorteo[cfg['bola_especial']]}")
+        if sorteo.get('rojos'):
+            print(f"  Rojos       : {' - '.join(map(str, sorteo['rojos']))}")
+        if cfg.get('bola_especial'):
+            print(f"  {cfg['bola_especial'].replace('_', ' ').title():<12}: {sorteo[cfg['bola_especial']]}")
         if cfg.get('multiplicador') and sorteo.get(cfg['multiplicador']):
             print(f"  Multiplicad.: {sorteo[cfg['multiplicador']]}x")
         if sorteo.get('doble_jugada'):
