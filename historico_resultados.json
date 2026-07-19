@@ -1,6 +1,24 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-18",
+      "blancos": [
+        9,
+        14,
+        44,
+        50,
+        56
+      ],
+      "powerball": 3,
+      "powerplay": 4,
+      "jackpot_ganado": false,
+      "ganador_estado": null,
+      "doble_jugada": null
+    },
+    "fecha_actualizacion": "Domingo, 19 de Julio de 2026 - 03:25 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-15",
       "blancos": [
         2,
