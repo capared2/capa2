@@ -583,27 +583,31 @@ class PowerballScraper(MuslSiteScraper):
         url = self.cfg.get('double_play_url')
         if not url:
             return None
-        try:
-            response = requests.get(url, headers=self.headers, timeout=REQUEST_TIMEOUT)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.content, 'html.parser')
-            seccion = soup.find('div', class_='col', id='numbers') or soup
-            fecha_dp = None
-            date_el = seccion.find('h5', class_='card-title')
-            if date_el:
-                fecha_dp = self.format_date_iso(date_el.text.strip())
-            blancas, _rojas, especial = self._extraer_bolas(seccion)
-            if len(blancas) == 5 and especial is not None:
-                if fecha_esperada and fecha_dp and fecha_dp != fecha_esperada:
-                    logging.warning(
-                        f"[{self.nombre}] Double Play descartado: fecha {fecha_dp} "
-                        f"no coincide con el sorteo {fecha_esperada}"
-                    )
-                    return None
-                logging.info(f"[{self.nombre}] Double Play (página dedicada): {sorted(blancas)} + {especial}")
-                return {'blancos': sorted(blancas), 'powerball': especial}
-        except Exception as e:
-            logging.warning(f"[{self.nombre}] Error Double Play (página dedicada): {e}")
+        # El sitio a veces sirve respuestas corruptas de forma intermitente;
+        # un segundo intento suele bastar.
+        for intento in range(2):
+            try:
+                response = requests.get(url, headers=self.headers, timeout=REQUEST_TIMEOUT)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.content, 'html.parser')
+                seccion = soup.find('div', class_='col', id='numbers') or soup
+                fecha_dp = None
+                date_el = seccion.find('h5', class_='card-title')
+                if date_el:
+                    fecha_dp = self.format_date_iso(date_el.text.strip())
+                blancas, _rojas, especial = self._extraer_bolas(seccion)
+                if len(blancas) == 5 and especial is not None:
+                    if fecha_esperada and fecha_dp and fecha_dp != fecha_esperada:
+                        logging.warning(
+                            f"[{self.nombre}] Double Play descartado: fecha {fecha_dp} "
+                            f"no coincide con el sorteo {fecha_esperada}"
+                        )
+                        return None
+                    logging.info(f"[{self.nombre}] Double Play (página dedicada): {sorted(blancas)} + {especial}")
+                    return {'blancos': sorted(blancas), 'powerball': especial}
+                logging.warning(f"[{self.nombre}] Double Play incompleto (intento {intento + 1})")
+            except Exception as e:
+                logging.warning(f"[{self.nombre}] Error Double Play (página dedicada, intento {intento + 1}): {e}")
         return None
 
     def scrape_socrata(self):
