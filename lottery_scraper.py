@@ -446,6 +446,11 @@ class MuslSiteScraper(BaseScraper):
                 blancas = blancas_pg
                 rojas = rojas or rojas_pg
                 especial = especial if especial is not None else especial_pg
+        # Algunos juegos usan bolas rojas como bolas principales (Lotto America
+        # en powerball.com): si el juego no espera rojas y el conteo cuadra,
+        # las rojas SON las principales.
+        if len(blancas) != num_blancos and not self.cfg.get('num_rojas') and len(rojas) == num_blancos:
+            blancas, rojas = rojas, []
         logging.info(f"[{self.nombre}] Blancas: {blancas} | Rojas: {rojas} | Especial: {especial}")
 
         # Multiplicador (Power Play / All Star Bonus)
@@ -568,11 +573,13 @@ class PowerballScraper(MuslSiteScraper):
             logging.warning(f"[{self.nombre}] Error Double Play: {e}")
         return None
 
-    def _doble_jugada_pagina_dedicada(self):
+    def _doble_jugada_pagina_dedicada(self, fecha_esperada=None):
         """Extrae el Double Play desde powerball.com/double-play.
 
         En esa página las 5 bolas llevan la clase 'black-balls' (que
-        _extraer_bolas trata como blancas) y la especial 'dp-powerball'."""
+        _extraer_bolas trata como blancas) y la especial 'dp-powerball'.
+        Si se pasa fecha_esperada, solo se devuelve cuando la fecha del
+        sorteo Double Play coincide (evita mezclar sorteos distintos)."""
         url = self.cfg.get('double_play_url')
         if not url:
             return None
@@ -581,13 +588,35 @@ class PowerballScraper(MuslSiteScraper):
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
             seccion = soup.find('div', class_='col', id='numbers') or soup
+            fecha_dp = None
+            date_el = seccion.find('h5', class_='card-title')
+            if date_el:
+                fecha_dp = self.format_date_iso(date_el.text.strip())
             blancas, _rojas, especial = self._extraer_bolas(seccion)
             if len(blancas) == 5 and especial is not None:
+                if fecha_esperada and fecha_dp and fecha_dp != fecha_esperada:
+                    logging.warning(
+                        f"[{self.nombre}] Double Play descartado: fecha {fecha_dp} "
+                        f"no coincide con el sorteo {fecha_esperada}"
+                    )
+                    return None
                 logging.info(f"[{self.nombre}] Double Play (página dedicada): {sorted(blancas)} + {especial}")
                 return {'blancos': sorted(blancas), 'powerball': especial}
         except Exception as e:
             logging.warning(f"[{self.nombre}] Error Double Play (página dedicada): {e}")
         return None
+
+    def scrape_socrata(self):
+        """El respaldo de data.ny.gov no trae Double Play: se completa desde
+        la página dedicada cuando la fecha coincide."""
+        results = super().scrape_socrata()
+        if results.get('_success') and not results['sorteo'].get('doble_jugada'):
+            dp = self._doble_jugada_pagina_dedicada(
+                fecha_esperada=results['sorteo'].get('fecha')
+            )
+            if dp:
+                results['sorteo']['doble_jugada'] = dp
+        return results
 
 
 class MegaMillionsScraper(BaseScraper):
