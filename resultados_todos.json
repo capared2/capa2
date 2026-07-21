@@ -14,6 +14,8 @@
         ],
         "powerball": 8,
         "powerplay": 2,
+        "jackpot_ganado": false,
+        "ganador_estado": null,
         "doble_jugada": {
           "blancos": [
             15,
@@ -27,10 +29,10 @@
       },
       "proximo_sorteo": {
         "fecha": "2026-07-22",
-        "premio_estimado": null,
-        "premio_efectivo": null
+        "premio_estimado": 567000000,
+        "premio_efectivo": 251800000
       },
-      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -52,7 +54,7 @@
         "premio_estimado": 707000000,
         "premio_efectivo": 307700000
       },
-      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -76,7 +78,7 @@
         "premio_estimado": 2049999,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -100,7 +102,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -122,8 +124,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
     }
   },
-  "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 09:00 AM ET"
+  "fecha_actualizacion": "Martes, 21 de Julio de 2026 - 02:00 PM ET"
 }
