@@ -4,35 +4,23 @@
       "juego": "powerball",
       "nombre": "Powerball",
       "sorteo": {
-        "fecha": "2026-07-22",
+        "fecha": "2026-07-20",
         "blancos": [
-          4,
-          5,
-          22,
-          50,
-          58
+          2,
+          9,
+          44,
+          53,
+          59
         ],
-        "powerball": 1,
-        "powerplay": 3,
-        "jackpot_ganado": false,
-        "ganador_estado": null,
-        "doble_jugada": {
-          "blancos": [
-            9,
-            51,
-            54,
-            60,
-            61
-          ],
-          "powerball": 15
-        }
+        "powerball": 8,
+        "powerplay": 2
       },
       "proximo_sorteo": {
-        "fecha": "2026-07-25",
-        "premio_estimado": 600000000,
-        "premio_efectivo": 266399999
+        "fecha": "2026-07-22",
+        "premio_estimado": null,
+        "premio_efectivo": null
       },
-      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -54,7 +42,7 @@
         "premio_estimado": 743000000,
         "premio_efectivo": 323400000
       },
-      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -78,7 +66,7 @@
         "premio_estimado": 2100000,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -102,7 +90,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +112,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
     }
   },
-  "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+  "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
 }
