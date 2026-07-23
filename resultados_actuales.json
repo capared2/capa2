@@ -2,21 +2,33 @@
   "juego": "powerball",
   "nombre": "Powerball",
   "sorteo": {
-    "fecha": "2026-07-20",
+    "fecha": "2026-07-22",
     "blancos": [
-      2,
-      9,
-      44,
-      53,
-      59
+      4,
+      5,
+      22,
+      50,
+      58
     ],
-    "powerball": 8,
-    "powerplay": 2
+    "powerball": 1,
+    "powerplay": 3,
+    "jackpot_ganado": false,
+    "ganador_estado": null,
+    "doble_jugada": {
+      "blancos": [
+        9,
+        51,
+        54,
+        60,
+        61
+      ],
+      "powerball": 15
+    }
   },
   "proximo_sorteo": {
-    "fecha": "2026-07-22",
-    "premio_estimado": null,
-    "premio_efectivo": null
+    "fecha": "2026-07-25",
+    "premio_estimado": 600000000,
+    "premio_efectivo": 266399999
   },
-  "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:45 AM ET"
+  "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 03:29 AM ET"
 }
