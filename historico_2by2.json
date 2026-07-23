@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-22",
+      "blancos": [
+        5,
+        6
+      ],
+      "rojos": [
+        8,
+        20
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "KS"
+    },
+    "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-21",
       "blancos": [
         21,

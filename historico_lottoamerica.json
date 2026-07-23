@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-22",
+      "blancos": [
+        1,
+        12,
+        14,
+        29,
+        33
+      ],
+      "star_ball": 6,
+      "all_star_bonus": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-20",
       "blancos": [
         23,
