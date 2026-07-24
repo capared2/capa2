@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-07-22",
+    "fecha": "2026-07-23",
     "blancos": [
-      5,
-      6
+      10,
+      23
     ],
     "rojos": [
-      8,
-      20
+      15,
+      26
     ],
-    "jackpot_ganado": true,
-    "ganador_estado": "KS"
+    "jackpot_ganado": false,
+    "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-07-23",
+    "fecha": "2026-07-24",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Jueves, 23 de Julio de 2026 - 02:01 PM ET"
+  "fecha_actualizacion": "Viernes, 24 de Julio de 2026 - 03:28 AM ET"
 }
