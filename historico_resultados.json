@@ -1,6 +1,33 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-27",
+      "blancos": [
+        6,
+        26,
+        46,
+        58,
+        65
+      ],
+      "powerball": 25,
+      "powerplay": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null,
+      "doble_jugada": {
+        "blancos": [
+          17,
+          25,
+          59,
+          61,
+          69
+        ],
+        "powerball": 14
+      }
+    },
+    "fecha_actualizacion": "Martes, 28 de Julio de 2026 - 12:45 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-25",
       "blancos": [
         3,
