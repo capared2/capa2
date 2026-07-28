@@ -11,22 +11,12 @@
       47
     ],
     "powerball": 17,
-    "powerplay": 4,
-    "doble_jugada": {
-      "blancos": [
-        20,
-        21,
-        26,
-        28,
-        32
-      ],
-      "powerball": 10
-    }
+    "powerplay": 4
   },
   "proximo_sorteo": {
     "fecha": "2026-07-27",
     "premio_estimado": null,
     "premio_efectivo": null
   },
-  "fecha_actualizacion": "Lunes, 27 de Julio de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Martes, 28 de Julio de 2026 - 12:09 AM ET"
 }
