@@ -2,21 +2,21 @@
   "juego": "megamillions",
   "nombre": "Mega Millions",
   "sorteo": {
-    "fecha": "2026-07-24",
+    "fecha": "2026-07-28",
     "blancos": [
-      2,
-      5,
-      42,
-      44,
-      60
+      34,
+      48,
+      49,
+      59,
+      70
     ],
-    "megaball": 1,
+    "megaball": 12,
     "megaplier": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-07-28",
-    "premio_estimado": 800000000,
-    "premio_efectivo": 344200000
+    "fecha": "2026-07-31",
+    "premio_estimado": 50000000,
+    "premio_efectivo": 21500000
   },
-  "fecha_actualizacion": "Martes, 28 de Julio de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Miércoles, 29 de Julio de 2026 - 03:40 AM ET"
 }

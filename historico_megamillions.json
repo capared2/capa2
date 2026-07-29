@@ -1,6 +1,21 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-07-28",
+      "blancos": [
+        34,
+        48,
+        49,
+        59,
+        70
+      ],
+      "megaball": 12,
+      "megaplier": null
+    },
+    "fecha_actualizacion": "Miércoles, 29 de Julio de 2026 - 03:40 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-24",
       "blancos": [
         2,
