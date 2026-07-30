@@ -14,21 +14,12 @@
     "powerplay": 2,
     "jackpot_ganado": false,
     "ganador_estado": null,
-    "doble_jugada": {
-      "blancos": [
-        24,
-        37,
-        40,
-        51,
-        55
-      ],
-      "powerball": 5
-    }
+    "doble_jugada": null
   },
   "proximo_sorteo": {
     "fecha": "2026-08-01",
     "premio_estimado": 707000000,
     "premio_efectivo": 309700000
   },
-  "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+  "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:00 PM ET"
 }

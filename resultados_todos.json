@@ -16,23 +16,14 @@
         "powerplay": 2,
         "jackpot_ganado": false,
         "ganador_estado": null,
-        "doble_jugada": {
-          "blancos": [
-            24,
-            37,
-            40,
-            51,
-            55
-          ],
-          "powerball": 5
-        }
+        "doble_jugada": null
       },
       "proximo_sorteo": {
         "fecha": "2026-08-01",
         "premio_estimado": 707000000,
         "premio_efectivo": 309700000
       },
-      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:00 PM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -54,7 +45,7 @@
         "premio_estimado": 50000000,
         "premio_efectivo": 21500000
       },
-      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:00 PM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -78,7 +69,7 @@
         "premio_estimado": 2250000,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:01 PM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -102,7 +93,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:01 PM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +115,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+      "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:01 PM ET"
     }
   },
-  "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 09:00 AM ET"
+  "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:00 PM ET"
 }
