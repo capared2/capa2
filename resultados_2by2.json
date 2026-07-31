@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-07-29",
+    "fecha": "2026-07-30",
     "blancos": [
-      5,
-      7
+      9,
+      20
     ],
     "rojos": [
-      1,
-      24
+      12,
+      16
     ],
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-07-30",
+    "fecha": "2026-07-31",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Jueves, 30 de Julio de 2026 - 02:01 PM ET"
+  "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 03:48 AM ET"
 }
