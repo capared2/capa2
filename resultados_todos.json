@@ -32,29 +32,29 @@
         "premio_estimado": 707000000,
         "premio_efectivo": 307300000
       },
-      "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
       "nombre": "Mega Millions",
       "sorteo": {
-        "fecha": "2026-07-28",
+        "fecha": "2026-07-31",
         "blancos": [
-          34,
-          48,
-          49,
-          59,
-          70
+          4,
+          18,
+          26,
+          43,
+          51
         ],
-        "megaball": 12,
+        "megaball": 4,
         "megaplier": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-07-31",
-        "premio_estimado": 50000000,
-        "premio_efectivo": 21500000
+        "fecha": "2026-08-04",
+        "premio_estimado": 60000000,
+        "premio_efectivo": 25500000
       },
-      "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -78,31 +78,31 @@
         "premio_estimado": 2250000,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
     },
     "2by2": {
       "juego": "2by2",
       "nombre": "2by2",
       "sorteo": {
-        "fecha": "2026-07-30",
+        "fecha": "2026-07-31",
         "blancos": [
-          9,
-          20
+          12,
+          14
         ],
         "rojos": [
-          12,
-          16
+          9,
+          22
         ],
-        "jackpot_ganado": false,
-        "ganador_estado": null
+        "jackpot_ganado": true,
+        "ganador_estado": "ND"
       },
       "proximo_sorteo": {
-        "fecha": "2026-07-31",
+        "fecha": "2026-08-01",
         "premio_estimado": 22000,
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +124,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
     }
   },
-  "fecha_actualizacion": "Viernes, 31 de Julio de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 1 de Agosto de 2026 - 03:25 AM ET"
 }
