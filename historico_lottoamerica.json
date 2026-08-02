@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-01",
+      "blancos": [
+        14,
+        17,
+        27,
+        33,
+        36
+      ],
+      "star_ball": 10,
+      "all_star_bonus": 5,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Domingo, 2 de Agosto de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-07-29",
       "blancos": [
         11,
