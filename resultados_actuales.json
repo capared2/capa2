@@ -11,22 +11,12 @@
       54
     ],
     "powerball": 4,
-    "powerplay": 2,
-    "doble_jugada": {
-      "blancos": [
-        11,
-        15,
-        21,
-        28,
-        33
-      ],
-      "powerball": 6
-    }
+    "powerplay": 2
   },
   "proximo_sorteo": {
     "fecha": "2026-08-05",
     "premio_estimado": null,
     "premio_efectivo": null
   },
-  "fecha_actualizacion": "Miércoles, 5 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Jueves, 6 de Agosto de 2026 - 12:09 AM ET"
 }
