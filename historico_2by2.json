@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-06",
+      "blancos": [
+        4,
+        14
+      ],
+      "rojos": [
+        6,
+        25
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "ND"
+    },
+    "fecha_actualizacion": "Viernes, 7 de Agosto de 2026 - 02:07 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-05",
       "blancos": [
         10,
