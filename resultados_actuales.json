@@ -12,8 +12,6 @@
     ],
     "powerball": 25,
     "powerplay": 2,
-    "jackpot_ganado": false,
-    "ganador_estado": null,
     "doble_jugada": {
       "blancos": [
         6,
@@ -27,8 +25,8 @@
   },
   "proximo_sorteo": {
     "fecha": "2026-08-08",
-    "premio_estimado": 856000000,
-    "premio_efectivo": 370700000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Viernes, 7 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 8 de Agosto de 2026 - 01:39 AM ET"
 }
