@@ -20,7 +20,7 @@
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +42,7 @@
         "premio_estimado": 80000000,
         "premio_efectivo": 34400000
       },
-      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -66,7 +66,7 @@
         "premio_estimado": 2450000,
         "premio_efectivo": 1060000
       },
-      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -90,7 +90,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -112,8 +112,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
     }
   },
-  "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+  "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:45 AM ET"
 }
