@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-08",
+      "blancos": [
+        17,
+        18
+      ],
+      "rojos": [
+        4,
+        24
+      ],
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Domingo, 9 de Agosto de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-07",
       "blancos": [
         1,
