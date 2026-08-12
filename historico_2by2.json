@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-11",
+      "blancos": [
+        14,
+        25
+      ],
+      "rojos": [
+        16,
+        19
+      ],
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Miércoles, 12 de Agosto de 2026 - 02:10 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-10",
       "blancos": [
         6,

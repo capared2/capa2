@@ -1,6 +1,21 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-11",
+      "blancos": [
+        1,
+        20,
+        30,
+        46,
+        68
+      ],
+      "megaball": 17,
+      "megaplier": null
+    },
+    "fecha_actualizacion": "Miércoles, 12 de Agosto de 2026 - 02:10 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-07",
       "blancos": [
         17,
