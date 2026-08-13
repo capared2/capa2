@@ -4,23 +4,33 @@
       "juego": "powerball",
       "nombre": "Powerball",
       "sorteo": {
-        "fecha": "2026-08-10",
+        "fecha": "2026-08-12",
         "blancos": [
-          6,
-          37,
-          54,
-          55,
-          64
+          4,
+          26,
+          66,
+          67,
+          69
         ],
-        "powerball": 10,
-        "powerplay": 3
+        "powerball": 9,
+        "powerplay": 2,
+        "doble_jugada": {
+          "blancos": [
+            3,
+            4,
+            19,
+            21,
+            58
+          ],
+          "powerball": 8
+        }
       },
       "proximo_sorteo": {
-        "fecha": "2026-08-12",
+        "fecha": "2026-08-15",
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +52,7 @@
         "premio_estimado": 90000000,
         "premio_efectivo": 38700000
       },
-      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -66,7 +76,7 @@
         "premio_estimado": 2550000,
         "premio_efectivo": 1100000
       },
-      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -90,7 +100,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -112,8 +122,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+      "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
     }
   },
-  "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 02:13 AM ET"
+  "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 09:00 AM ET"
 }
