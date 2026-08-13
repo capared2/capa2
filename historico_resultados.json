@@ -1,6 +1,33 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-12",
+      "blancos": [
+        4,
+        26,
+        66,
+        67,
+        69
+      ],
+      "powerball": 9,
+      "powerplay": 2,
+      "jackpot_ganado": true,
+      "ganador_estado": "IL",
+      "doble_jugada": {
+        "blancos": [
+          3,
+          4,
+          19,
+          21,
+          58
+        ],
+        "powerball": 8
+      }
+    },
+    "fecha_actualizacion": "Jueves, 13 de Agosto de 2026 - 12:45 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-10",
       "blancos": [
         6,
