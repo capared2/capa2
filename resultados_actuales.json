@@ -12,8 +12,6 @@
     ],
     "powerball": 9,
     "powerplay": 2,
-    "jackpot_ganado": true,
-    "ganador_estado": "IL",
     "doble_jugada": {
       "blancos": [
         3,
@@ -27,8 +25,8 @@
   },
   "proximo_sorteo": {
     "fecha": "2026-08-15",
-    "premio_estimado": 20000000,
-    "premio_efectivo": 8700000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Viernes, 14 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 15 de Agosto de 2026 - 01:20 AM ET"
 }
