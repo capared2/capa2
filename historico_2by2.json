@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-17",
+      "blancos": [
+        1,
+        15
+      ],
+      "rojos": [
+        10,
+        16
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "KS"
+    },
+    "fecha_actualizacion": "Martes, 18 de Agosto de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-16",
       "blancos": [
         6,
