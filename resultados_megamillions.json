@@ -2,21 +2,21 @@
   "juego": "megamillions",
   "nombre": "Mega Millions",
   "sorteo": {
-    "fecha": "2026-08-18",
+    "fecha": "2026-08-21",
     "blancos": [
-      5,
-      19,
-      30,
-      38,
-      59
+      1,
+      25,
+      34,
+      48,
+      57
     ],
-    "megaball": 12,
+    "megaball": 24,
     "megaplier": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-08-21",
-    "premio_estimado": 113000000,
-    "premio_efectivo": 48300000
+    "fecha": "2026-08-25",
+    "premio_estimado": 130000000,
+    "premio_efectivo": 55500000
   },
-  "fecha_actualizacion": "Viernes, 21 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 22 de Agosto de 2026 - 01:22 AM ET"
 }
