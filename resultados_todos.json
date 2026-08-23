@@ -16,23 +16,14 @@
         "powerplay": 3,
         "jackpot_ganado": false,
         "ganador_estado": null,
-        "doble_jugada": {
-          "blancos": [
-            4,
-            18,
-            29,
-            47,
-            53
-          ],
-          "powerball": 16
-        }
+        "doble_jugada": null
       },
       "proximo_sorteo": {
         "fecha": "2026-08-24",
         "premio_estimado": 81000000,
         "premio_efectivo": 34800000
       },
-      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -54,7 +45,7 @@
         "premio_estimado": 130000000,
         "premio_efectivo": 55500000
       },
-      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -78,7 +69,7 @@
         "premio_estimado": 2750000,
         "premio_efectivo": 1180000
       },
-      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -102,7 +93,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +115,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+      "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
     }
   },
-  "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
+  "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:45 AM ET"
 }
