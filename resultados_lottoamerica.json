@@ -2,23 +2,23 @@
   "juego": "lottoamerica",
   "nombre": "Lotto America",
   "sorteo": {
-    "fecha": "2026-08-19",
+    "fecha": "2026-08-22",
     "blancos": [
+      20,
       23,
-      31,
-      40,
-      41,
-      45
+      36,
+      42,
+      50
     ],
-    "star_ball": 1,
-    "all_star_bonus": 5,
+    "star_ball": 4,
+    "all_star_bonus": 2,
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-08-22",
-    "premio_estimado": 2700000,
-    "premio_efectivo": 1150000
+    "fecha": "2026-08-24",
+    "premio_estimado": 2750000,
+    "premio_efectivo": 1180000
   },
-  "fecha_actualizacion": "Sábado, 22 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
 }

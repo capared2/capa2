@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-08-21",
+    "fecha": "2026-08-22",
     "blancos": [
-      1,
-      16
+      6,
+      21
     ],
     "rojos": [
-      9,
-      19
+      2,
+      23
     ],
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-08-22",
+    "fecha": "2026-08-23",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Sábado, 22 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 23 de Agosto de 2026 - 12:09 AM ET"
 }
