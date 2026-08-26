@@ -30,29 +30,29 @@
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
       "nombre": "Mega Millions",
       "sorteo": {
-        "fecha": "2026-08-21",
+        "fecha": "2026-08-25",
         "blancos": [
-          1,
-          25,
-          34,
+          7,
+          10,
+          47,
           48,
-          57
+          50
         ],
-        "megaball": 24,
+        "megaball": 14,
         "megaplier": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-08-25",
-        "premio_estimado": 130000000,
-        "premio_efectivo": 55500000
+        "fecha": "2026-08-28",
+        "premio_estimado": 145000000,
+        "premio_efectivo": 61900000
       },
-      "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -76,31 +76,31 @@
         "premio_estimado": 2930000,
         "premio_efectivo": 1250000
       },
-      "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
     },
     "2by2": {
       "juego": "2by2",
       "nombre": "2by2",
       "sorteo": {
-        "fecha": "2026-08-24",
+        "fecha": "2026-08-25",
         "blancos": [
-          10,
-          13
+          4,
+          8
         ],
         "rojos": [
-          3,
-          18
+          1,
+          8
         ],
         "jackpot_ganado": false,
         "ganador_estado": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-08-25",
+        "fecha": "2026-08-26",
         "premio_estimado": 22000,
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -122,8 +122,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
     }
   },
-  "fecha_actualizacion": "Martes, 25 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 01:30 AM ET"
 }
