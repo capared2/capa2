@@ -2,13 +2,13 @@
   "juego": "powerball",
   "nombre": "Powerball",
   "sorteo": {
-    "fecha": "2026-08-24",
+    "fecha": "2026-08-26",
     "blancos": [
-      3,
-      16,
-      33,
-      38,
-      68
+      12,
+      32,
+      45,
+      50,
+      58
     ],
     "powerball": 2,
     "powerplay": 2,
@@ -16,19 +16,19 @@
     "ganador_estado": null,
     "doble_jugada": {
       "blancos": [
-        5,
         6,
-        34,
-        38,
-        39
+        11,
+        15,
+        32,
+        58
       ],
-      "powerball": 7
+      "powerball": 18
     }
   },
   "proximo_sorteo": {
-    "fecha": "2026-08-26",
-    "premio_estimado": 96000000,
-    "premio_efectivo": 41200000
+    "fecha": "2026-08-29",
+    "premio_estimado": 119000000,
+    "premio_efectivo": 51100000
   },
-  "fecha_actualizacion": "Miércoles, 26 de Agosto de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Jueves, 27 de Agosto de 2026 - 12:09 AM ET"
 }
