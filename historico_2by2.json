@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-27",
+      "blancos": [
+        10,
+        19
+      ],
+      "rojos": [
+        11,
+        26
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "NE"
+    },
+    "fecha_actualizacion": "Viernes, 28 de Agosto de 2026 - 09:00 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-26",
       "blancos": [
         14,
