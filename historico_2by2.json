@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-08-28",
+      "blancos": [
+        15,
+        18
+      ],
+      "rojos": [
+        16,
+        17
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "WY"
+    },
+    "fecha_actualizacion": "Sábado, 29 de Agosto de 2026 - 07:27 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-08-27",
       "blancos": [
         10,
