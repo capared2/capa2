@@ -13,26 +13,14 @@
           49
         ],
         "powerball": 10,
-        "powerplay": 2,
-        "jackpot_ganado": false,
-        "ganador_estado": null,
-        "doble_jugada": {
-          "blancos": [
-            4,
-            26,
-            28,
-            44,
-            67
-          ],
-          "powerball": 20
-        }
+        "powerplay": 2
       },
       "proximo_sorteo": {
         "fecha": "2026-09-02",
-        "premio_estimado": 146000000,
-        "premio_efectivo": 63300000
+        "premio_estimado": null,
+        "premio_efectivo": null
       },
-      "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -54,55 +42,55 @@
         "premio_estimado": 177000000,
         "premio_efectivo": 76300000
       },
-      "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
       "nombre": "Lotto America",
       "sorteo": {
-        "fecha": "2026-08-31",
+        "fecha": "2026-09-02",
         "blancos": [
-          8,
-          22,
-          27,
-          30,
-          34
+          2,
+          4,
+          16,
+          39,
+          45
         ],
-        "star_ball": 4,
-        "all_star_bonus": 4,
+        "star_ball": 6,
+        "all_star_bonus": 3,
         "jackpot_ganado": false,
         "ganador_estado": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-09-02",
-        "premio_estimado": 3400000,
-        "premio_efectivo": 1470000
+        "fecha": "2026-09-05",
+        "premio_estimado": 3610000,
+        "premio_efectivo": 1560000
       },
-      "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
     },
     "2by2": {
       "juego": "2by2",
       "nombre": "2by2",
       "sorteo": {
-        "fecha": "2026-09-01",
+        "fecha": "2026-09-02",
         "blancos": [
-          16,
-          21
+          8,
+          13
         ],
         "rojos": [
-          6,
-          9
+          10,
+          20
         ],
         "jackpot_ganado": false,
         "ganador_estado": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-09-02",
+        "fecha": "2026-09-03",
         "premio_estimado": 22000,
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +112,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
     }
   },
-  "fecha_actualizacion": "Miércoles, 2 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Jueves, 3 de Septiembre de 2026 - 12:09 AM ET"
 }
