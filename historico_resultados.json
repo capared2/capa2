@@ -1,6 +1,33 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-09-05",
+      "blancos": [
+        15,
+        40,
+        47,
+        53,
+        59
+      ],
+      "powerball": 9,
+      "powerplay": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null,
+      "doble_jugada": {
+        "blancos": [
+          21,
+          24,
+          30,
+          47,
+          60
+        ],
+        "powerball": 5
+      }
+    },
+    "fecha_actualizacion": "Domingo, 6 de Septiembre de 2026 - 12:45 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-09-02",
       "blancos": [
         3,
