@@ -11,24 +11,12 @@
       64
     ],
     "powerball": 14,
-    "powerplay": 2,
-    "jackpot_ganado": false,
-    "ganador_estado": null,
-    "doble_jugada": {
-      "blancos": [
-        5,
-        6,
-        15,
-        26,
-        33
-      ],
-      "powerball": 20
-    }
+    "powerplay": 2
   },
   "proximo_sorteo": {
     "fecha": "2026-09-05",
-    "premio_estimado": 173000000,
-    "premio_efectivo": 74600000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Sábado, 5 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 6 de Septiembre de 2026 - 12:09 AM ET"
 }

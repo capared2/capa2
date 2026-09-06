@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-09-04",
+    "fecha": "2026-09-05",
     "blancos": [
       1,
-      16
+      23
     ],
     "rojos": [
-      13,
-      22
+      5,
+      16
     ],
     "jackpot_ganado": true,
     "ganador_estado": "ND"
   },
   "proximo_sorteo": {
-    "fecha": "2026-09-05",
+    "fecha": "2026-09-06",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Sábado, 5 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 6 de Septiembre de 2026 - 12:09 AM ET"
 }
