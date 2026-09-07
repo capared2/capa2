@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-09-06",
+      "blancos": [
+        5,
+        22
+      ],
+      "rojos": [
+        7,
+        18
+      ],
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Lunes, 7 de Septiembre de 2026 - 05:55 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-09-05",
       "blancos": [
         1,
