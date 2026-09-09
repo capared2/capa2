@@ -2,21 +2,21 @@
   "juego": "megamillions",
   "nombre": "Mega Millions",
   "sorteo": {
-    "fecha": "2026-09-04",
+    "fecha": "2026-09-08",
     "blancos": [
-      6,
-      26,
-      34,
-      59,
-      61
+      17,
+      30,
+      43,
+      58,
+      66
     ],
-    "megaball": 24,
+    "megaball": 20,
     "megaplier": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-09-08",
-    "premio_estimado": 193000000,
-    "premio_efectivo": 82800000
+    "fecha": "2026-09-11",
+    "premio_estimado": 209000000,
+    "premio_efectivo": 89700000
   },
-  "fecha_actualizacion": "Martes, 8 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Miércoles, 9 de Septiembre de 2026 - 05:22 AM ET"
 }
