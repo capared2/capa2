@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-09-16",
+    "fecha": "2026-09-17",
     "blancos": [
-      12,
+      13,
       25
     ],
     "rojos": [
-      2,
-      17
+      6,
+      23
     ],
-    "jackpot_ganado": true,
-    "ganador_estado": "WY"
+    "jackpot_ganado": false,
+    "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-09-17",
+    "fecha": "2026-09-18",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Jueves, 17 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Viernes, 18 de Septiembre de 2026 - 05:21 AM ET"
 }
