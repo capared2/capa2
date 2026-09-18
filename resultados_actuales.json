@@ -12,8 +12,6 @@
     ],
     "powerball": 7,
     "powerplay": 2,
-    "jackpot_ganado": false,
-    "ganador_estado": null,
     "doble_jugada": {
       "blancos": [
         16,
@@ -27,8 +25,8 @@
   },
   "proximo_sorteo": {
     "fecha": "2026-09-19",
-    "premio_estimado": 298000000,
-    "premio_efectivo": 126600000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Viernes, 18 de Septiembre de 2026 - 09:00 AM ET"
+  "fecha_actualizacion": "Viernes, 18 de Septiembre de 2026 - 02:00 PM ET"
 }
