@@ -11,22 +11,12 @@
       64
     ],
     "powerball": 7,
-    "powerplay": 2,
-    "doble_jugada": {
-      "blancos": [
-        16,
-        30,
-        44,
-        64,
-        67
-      ],
-      "powerball": 3
-    }
+    "powerplay": 2
   },
   "proximo_sorteo": {
     "fecha": "2026-09-19",
     "premio_estimado": null,
     "premio_efectivo": null
   },
-  "fecha_actualizacion": "Sábado, 19 de Septiembre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 20 de Septiembre de 2026 - 12:09 AM ET"
 }

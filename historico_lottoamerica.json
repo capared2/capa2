@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-09-19",
+      "blancos": [
+        14,
+        21,
+        24,
+        27,
+        44
+      ],
+      "star_ball": 7,
+      "all_star_bonus": 2,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Domingo, 20 de Septiembre de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-09-16",
       "blancos": [
         5,
