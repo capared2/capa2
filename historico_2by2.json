@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-09-24",
+      "blancos": [
+        22,
+        25
+      ],
+      "rojos": [
+        10,
+        22
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "KS"
+    },
+    "fecha_actualizacion": "Viernes, 25 de Septiembre de 2026 - 05:58 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-09-23",
       "blancos": [
         18,
