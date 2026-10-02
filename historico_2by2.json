@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-10-01",
+      "blancos": [
+        7,
+        13
+      ],
+      "rojos": [
+        2,
+        4
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "NE"
+    },
+    "fecha_actualizacion": "Viernes, 2 de Octubre de 2026 - 06:51 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-09-30",
       "blancos": [
         3,
