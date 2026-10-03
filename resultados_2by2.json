@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-10-01",
+    "fecha": "2026-10-02",
     "blancos": [
-      7,
-      13
+      15,
+      18
     ],
     "rojos": [
-      2,
-      4
+      16,
+      19
     ],
-    "jackpot_ganado": true,
-    "ganador_estado": "NE"
+    "jackpot_ganado": false,
+    "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-10-02",
+    "fecha": "2026-10-03",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Viernes, 2 de Octubre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 3 de Octubre de 2026 - 06:11 AM ET"
 }

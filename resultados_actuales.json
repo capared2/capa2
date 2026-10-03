@@ -12,8 +12,6 @@
     ],
     "powerball": 13,
     "powerplay": 4,
-    "jackpot_ganado": false,
-    "ganador_estado": null,
     "doble_jugada": {
       "blancos": [
         10,
@@ -27,8 +25,8 @@
   },
   "proximo_sorteo": {
     "fecha": "2026-10-03",
-    "premio_estimado": 440000000,
-    "premio_efectivo": 181300000
+    "premio_estimado": null,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Viernes, 2 de Octubre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 3 de Octubre de 2026 - 06:11 AM ET"
 }
