@@ -2,13 +2,13 @@
   "juego": "lottoamerica",
   "nombre": "Lotto America",
   "sorteo": {
-    "fecha": "2026-09-30",
+    "fecha": "2026-10-03",
     "blancos": [
-      16,
-      23,
-      38,
-      39,
-      48
+      12,
+      13,
+      21,
+      40,
+      49
     ],
     "star_ball": 2,
     "all_star_bonus": 3,
@@ -16,9 +16,9 @@
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-10-03",
-    "premio_estimado": 6050000,
-    "premio_efectivo": 2490000
+    "fecha": "2026-10-05",
+    "premio_estimado": 2000000,
+    "premio_efectivo": null
   },
-  "fecha_actualizacion": "Sábado, 3 de Octubre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Domingo, 4 de Octubre de 2026 - 12:09 AM ET"
 }
