@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-10-11",
+      "blancos": [
+        3,
+        15
+      ],
+      "rojos": [
+        9,
+        10
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "KS"
+    },
+    "fecha_actualizacion": "Lunes, 12 de Octubre de 2026 - 08:42 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-10-10",
       "blancos": [
         12,
