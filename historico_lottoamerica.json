@@ -1,6 +1,23 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-10-21",
+      "blancos": [
+        4,
+        18,
+        38,
+        44,
+        51
+      ],
+      "star_ball": 1,
+      "all_star_bonus": 5,
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Jueves, 22 de Octubre de 2026 - 12:09 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-10-19",
       "blancos": [
         14,
