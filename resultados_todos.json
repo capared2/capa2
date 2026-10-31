@@ -32,29 +32,29 @@
         "premio_estimado": 760000000,
         "premio_efectivo": 325700000
       },
-      "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
       "nombre": "Mega Millions",
       "sorteo": {
-        "fecha": "2026-10-27",
+        "fecha": "2026-10-30",
         "blancos": [
-          14,
-          19,
-          21,
-          45,
-          67
+          5,
+          10,
+          38,
+          49,
+          68
         ],
-        "megaball": 3,
+        "megaball": 17,
         "megaplier": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-10-30",
-        "premio_estimado": 463000000,
-        "premio_efectivo": 194900000
+        "fecha": "2026-11-03",
+        "premio_estimado": 482000000,
+        "premio_efectivo": 203600000
       },
-      "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -78,31 +78,31 @@
         "premio_estimado": 2550000,
         "premio_efectivo": 1090000
       },
-      "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
     },
     "2by2": {
       "juego": "2by2",
       "nombre": "2by2",
       "sorteo": {
-        "fecha": "2026-10-29",
+        "fecha": "2026-10-30",
         "blancos": [
-          20,
-          22
+          9,
+          21
         ],
         "rojos": [
-          17,
-          21
+          7,
+          14
         ],
         "jackpot_ganado": false,
         "ganador_estado": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-10-30",
+        "fecha": "2026-10-31",
         "premio_estimado": 22000,
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -124,8 +124,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+      "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
     }
   },
-  "fecha_actualizacion": "Viernes, 30 de Octubre de 2026 - 02:00 PM ET"
+  "fecha_actualizacion": "Sábado, 31 de Octubre de 2026 - 06:42 AM ET"
 }
