@@ -2,23 +2,23 @@
   "juego": "2by2",
   "nombre": "2by2",
   "sorteo": {
-    "fecha": "2026-11-01",
+    "fecha": "2026-11-02",
     "blancos": [
-      5,
+      1,
       17
     ],
     "rojos": [
-      10,
-      18
+      6,
+      25
     ],
     "jackpot_ganado": false,
     "ganador_estado": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-11-02",
+    "fecha": "2026-11-03",
     "premio_estimado": 22000,
     "premio_efectivo": null,
     "premio_descripcion": "Premio mayor: $22,000"
   },
-  "fecha_actualizacion": "Lunes, 2 de Noviembre de 2026 - 01:00 PM ET"
+  "fecha_actualizacion": "Lunes, 2 de Noviembre de 2026 - 11:09 PM ET"
 }
