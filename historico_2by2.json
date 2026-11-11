@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-11-10",
+      "blancos": [
+        21,
+        23
+      ],
+      "rojos": [
+        6,
+        12
+      ],
+      "jackpot_ganado": false,
+      "ganador_estado": null
+    },
+    "fecha_actualizacion": "Miércoles, 11 de Noviembre de 2026 - 07:23 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-11-09",
       "blancos": [
         24,

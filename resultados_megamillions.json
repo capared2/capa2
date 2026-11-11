@@ -2,21 +2,21 @@
   "juego": "megamillions",
   "nombre": "Mega Millions",
   "sorteo": {
-    "fecha": "2026-11-06",
+    "fecha": "2026-11-10",
     "blancos": [
-      27,
-      34,
-      44,
-      53,
-      64
+      2,
+      18,
+      25,
+      30,
+      65
     ],
-    "megaball": 1,
+    "megaball": 22,
     "megaplier": null
   },
   "proximo_sorteo": {
-    "fecha": "2026-11-10",
-    "premio_estimado": 529000000,
-    "premio_efectivo": 224200000
+    "fecha": "2026-11-13",
+    "premio_estimado": 555000000,
+    "premio_efectivo": 235200000
   },
-  "fecha_actualizacion": "Martes, 10 de Noviembre de 2026 - 01:00 PM ET"
+  "fecha_actualizacion": "Miércoles, 11 de Noviembre de 2026 - 07:23 AM ET"
 }
