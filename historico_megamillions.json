@@ -1,6 +1,21 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-11-13",
+      "blancos": [
+        10,
+        22,
+        33,
+        49,
+        57
+      ],
+      "megaball": 18,
+      "megaplier": null
+    },
+    "fecha_actualizacion": "Sábado, 14 de Noviembre de 2026 - 06:54 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-11-10",
       "blancos": [
         2,
