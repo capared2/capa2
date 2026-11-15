@@ -11,22 +11,12 @@
       57
     ],
     "powerball": 17,
-    "powerplay": 3,
-    "doble_jugada": {
-      "blancos": [
-        15,
-        27,
-        45,
-        52,
-        55
-      ],
-      "powerball": 1
-    }
+    "powerplay": 3
   },
   "proximo_sorteo": {
     "fecha": "2026-11-14",
     "premio_estimado": null,
     "premio_efectivo": null
   },
-  "fecha_actualizacion": "Sábado, 14 de Noviembre de 2026 - 11:09 PM ET"
+  "fecha_actualizacion": "Sábado, 14 de Noviembre de 2026 - 11:45 PM ET"
 }
