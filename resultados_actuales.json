@@ -2,21 +2,31 @@
   "juego": "powerball",
   "nombre": "Powerball",
   "sorteo": {
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-18",
     "blancos": [
-      17,
-      35,
-      48,
-      60,
-      69
+      18,
+      31,
+      43,
+      51,
+      62
     ],
-    "powerball": 17,
-    "powerplay": 2
+    "powerball": 12,
+    "powerplay": 2,
+    "doble_jugada": {
+      "blancos": [
+        4,
+        6,
+        8,
+        48,
+        55
+      ],
+      "powerball": 19
+    }
   },
   "proximo_sorteo": {
-    "fecha": "2026-11-18",
+    "fecha": "2026-11-21",
     "premio_estimado": null,
     "premio_efectivo": null
   },
-  "fecha_actualizacion": "Miércoles, 18 de Noviembre de 2026 - 11:45 PM ET"
+  "fecha_actualizacion": "Jueves, 19 de Noviembre de 2026 - 08:00 AM ET"
 }

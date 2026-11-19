@@ -1,6 +1,31 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-11-18",
+      "blancos": [
+        18,
+        31,
+        43,
+        51,
+        62
+      ],
+      "powerball": 12,
+      "powerplay": 2,
+      "doble_jugada": {
+        "blancos": [
+          4,
+          6,
+          8,
+          48,
+          55
+        ],
+        "powerball": 19
+      }
+    },
+    "fecha_actualizacion": "Jueves, 19 de Noviembre de 2026 - 08:00 AM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-11-16",
       "blancos": [
         17,
