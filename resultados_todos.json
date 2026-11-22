@@ -4,23 +4,33 @@
       "juego": "powerball",
       "nombre": "Powerball",
       "sorteo": {
-        "fecha": "2026-11-18",
+        "fecha": "2026-11-21",
         "blancos": [
-          18,
-          31,
-          43,
-          51,
-          62
+          5,
+          29,
+          33,
+          36,
+          45
         ],
-        "powerball": 12,
-        "powerplay": 2
+        "powerball": 22,
+        "powerplay": 2,
+        "doble_jugada": {
+          "blancos": [
+            10,
+            42,
+            45,
+            68,
+            69
+          ],
+          "powerball": 22
+        }
       },
       "proximo_sorteo": {
-        "fecha": "2026-11-21",
+        "fecha": "2026-11-23",
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +52,7 @@
         "premio_estimado": 645000000,
         "premio_efectivo": 270800000
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -62,11 +72,11 @@
         "ganador_estado": null
       },
       "proximo_sorteo": {
-        "fecha": "2026-11-21",
-        "premio_estimado": 3530000,
-        "premio_efectivo": 1480000
+        "fecha": "2026-11-23",
+        "premio_estimado": 3660000,
+        "premio_efectivo": 1530000
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -90,7 +100,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -112,8 +122,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
     }
   },
-  "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
+  "fecha_actualizacion": "Domingo, 22 de Noviembre de 2026 - 08:00 AM ET"
 }
