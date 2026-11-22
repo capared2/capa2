@@ -13,24 +13,14 @@
           62
         ],
         "powerball": 12,
-        "powerplay": 2,
-        "doble_jugada": {
-          "blancos": [
-            4,
-            6,
-            8,
-            48,
-            55
-          ],
-          "powerball": 19
-        }
+        "powerplay": 2
       },
       "proximo_sorteo": {
         "fecha": "2026-11-21",
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -52,7 +42,7 @@
         "premio_estimado": 645000000,
         "premio_efectivo": 270800000
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -76,7 +66,7 @@
         "premio_estimado": 3530000,
         "premio_efectivo": 1480000
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -100,7 +90,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -122,8 +112,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+      "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
     }
   },
-  "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+  "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:45 PM ET"
 }
