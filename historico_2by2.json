@@ -1,6 +1,22 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-11-21",
+      "blancos": [
+        14,
+        21
+      ],
+      "rojos": [
+        3,
+        20
+      ],
+      "jackpot_ganado": true,
+      "ganador_estado": "KS"
+    },
+    "fecha_actualizacion": "Sábado, 21 de Noviembre de 2026 - 11:09 PM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-11-20",
       "blancos": [
         14,
