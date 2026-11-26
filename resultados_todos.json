@@ -4,23 +4,33 @@
       "juego": "powerball",
       "nombre": "Powerball",
       "sorteo": {
-        "fecha": "2026-11-23",
+        "fecha": "2026-11-25",
         "blancos": [
-          7,
-          9,
-          27,
-          40,
-          58
+          23,
+          43,
+          57,
+          58,
+          68
         ],
-        "powerball": 19,
-        "powerplay": 2
+        "powerball": 12,
+        "powerplay": 3,
+        "doble_jugada": {
+          "blancos": [
+            22,
+            23,
+            54,
+            65,
+            68
+          ],
+          "powerball": 23
+        }
       },
       "proximo_sorteo": {
-        "fecha": "2026-11-25",
+        "fecha": "2026-11-28",
         "premio_estimado": null,
         "premio_efectivo": null
       },
-      "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
     },
     "megamillions": {
       "juego": "megamillions",
@@ -42,7 +52,7 @@
         "premio_estimado": 673000000,
         "premio_efectivo": 282600000
       },
-      "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
     },
     "lottoamerica": {
       "juego": "lottoamerica",
@@ -66,7 +76,7 @@
         "premio_estimado": 4030000,
         "premio_efectivo": 1690000
       },
-      "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
     },
     "2by2": {
       "juego": "2by2",
@@ -90,7 +100,7 @@
         "premio_efectivo": null,
         "premio_descripcion": "Premio mayor: $22,000"
       },
-      "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
     },
     "cash4life": {
       "juego": "cash4life",
@@ -112,8 +122,8 @@
         "premio_efectivo": null,
         "premio_descripcion": "$1,000 al día de por vida"
       },
-      "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+      "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
     }
   },
-  "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:45 PM ET"
+  "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 08:00 AM ET"
 }
