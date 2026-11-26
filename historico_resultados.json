@@ -1,6 +1,33 @@
 [
   {
     "sorteo": {
+      "fecha": "2026-11-25",
+      "blancos": [
+        23,
+        43,
+        57,
+        58,
+        68
+      ],
+      "powerball": 12,
+      "powerplay": 3,
+      "jackpot_ganado": false,
+      "ganador_estado": null,
+      "doble_jugada": {
+        "blancos": [
+          35,
+          36,
+          40,
+          48,
+          51
+        ],
+        "powerball": 3
+      }
+    },
+    "fecha_actualizacion": "Miércoles, 25 de Noviembre de 2026 - 11:09 PM ET"
+  },
+  {
+    "sorteo": {
       "fecha": "2026-11-23",
       "blancos": [
         7,
