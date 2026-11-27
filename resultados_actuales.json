@@ -12,21 +12,14 @@
     ],
     "powerball": 12,
     "powerplay": 3,
-    "doble_jugada": {
-      "blancos": [
-        22,
-        23,
-        54,
-        65,
-        68
-      ],
-      "powerball": 23
-    }
+    "jackpot_ganado": false,
+    "ganador_estado": null,
+    "doble_jugada": null
   },
   "proximo_sorteo": {
     "fecha": "2026-11-28",
-    "premio_estimado": null,
-    "premio_efectivo": null
+    "premio_estimado": 48000000,
+    "premio_efectivo": 20200000
   },
-  "fecha_actualizacion": "Jueves, 26 de Noviembre de 2026 - 01:00 PM ET"
+  "fecha_actualizacion": "Viernes, 27 de Noviembre de 2026 - 08:00 AM ET"
 }
